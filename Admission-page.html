@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGEC | ADMISSIONS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* navbar css  */
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.Vgec-logo{
+    display: flex;
+}
+.Vgec-logo .clogo {
+    float: left;
+    margin: auto 25px;
+}
+.vgec-heading{
+    font-size: 0.8rem;
+    margin: auto;
+}
+.navbar{
+    /* position:fixed; */
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+nav{
+    /* position: fixed; */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2) ,0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: darkblue;
+    background: #fff;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 30px
+}
+.nav-left{
+    margin: auto;
+}
+.nav-right{
+    display: flex;
+    margin: auto;
+}
+.nav-right ul{
+    position: relative;
+   display: flex;
+}
+.nav-right ul li {
+    background: #fff;
+    padding: 10px; 
+    list-style: none;
+    font-size: 1.1rem;
+}
+.nav-right ul li a{
+    color: darkblue;
+    text-decoration: none;
+}
+.nav-right ul ul{
+    list-style: none;
+    position: absolute;
+    top: 90px;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.nav-right ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-right ul ul li{
+    position: relative;
+    top: -50px;
+    margin: 0;
+    width: 150px;
+    display: list-item;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+}
+.nav-right ul ul li a{
+    line-height: 40px;
+}
+        /* end of navbar css  */
+        .main {
+            width: 100%;
+            height: fit-content;
+            font-size: 1.1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        .admin-heading {
+            text-transform: uppercase;
+            font-weight:400;
+            font-size: 2rem;
+            color: darkblue;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        .adm-container .admin-heading3 {
+            font-weight: 400;
+            font-size: 1.3rem;
+            color: darkblue;
+            margin: 10px auto;
+        }
+
+        .adm-container .admin-para a {
+            text-decoration: none;
+            color: blue;
+        }
+
+         .adm-container {
+            width: 60%;
+            max-height: fit-content;
+            text-align: justify;
+            line-height: 1.4;
+            border: 1px blue solid;
+            padding: 10px;
+            margin: 10px auto;
+        }
+
+        .table-content {
+            width: 100%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .table-content .admin-table {
+            width: 85%;
+            margin: auto;
+        }
+
+        .admin-table thead tr {
+            background: rgb(0, 0, 88);
+        }
+
+        .admin-table thead tr th {
+            font-size: 1.3rem;
+            font-weight: 400;
+            padding: 10px;
+            color: #fff;
+            margin: 10px;
+            line-height: 3;
+        }
+
+        .admin-table tbody tr td {
+            padding: 10px;
+            color: #000;
+            margin: 10px;
+            line-height: 3;
+        }
+        /* footer css  */
+        .footer{
+    background: rgb(24, 24, 153);
+    color: #fff;
+    width: 100%;
+    
+}
+.top{
+    margin: 5px auto;
+    display: flex;
+}
+.left{
+    background: rgb(24, 24, 153);
+    width: 80%;
+    margin: 5px auto;
+}
+.logo{
+
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    width: min-content;
+margin: auto;
+}
+.row{
+    
+    text-align: center;
+    font-size: 20px;
+  
+    margin: 10px auto;
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+.col1{
+    flex-basis: 30%;
+
+}
+.col2{
+
+   flex-basis: 30%;
+    
+}
+.col3{
+
+    flex-basis: 30%;
+    margin: auto;   
+  
+}
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin:10px auto; */
+    /* background: deepskyblue; */
+    padding: 5px;
+}
+.tag .pic{
+    padding-right: 10px;
+}
+.tag .right-head{
+    padding: 10px;
+}
+.logo{
+    align-items: center;
+    display: flex;
+}
+.logo .image{
+    margin: auto 25px;
+}
+.text{
+    width: max-content;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar body  -->
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="Vgec-logo">
+                    <div class="clogo"> <img src="/WD/practical 1/Images/clogo.png" width="60px" alt=""></div>
+                    <div class="vgec-heading">
+                        <h1>Vishwakarma Government Engineering College , <br> chandkheda Ahmedabad</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+
+
+                <ul>
+                    <li><a href="#About">About us</a> </li>
+                    <li><a href="#Academic">Academic</a> 
+                    <ul>
+                        <li><a href="Admission-page.html">Admissions</a></li>
+                        <li><a href="deparment.html">Department</a></li>
+                    </ul></li>
+                    <li> <a href="#Facilities"> Facilities </a>
+                    <ul><li><a href="library-page.html">Library</a></li></ul></li> 
+                    <li> <a href="#Life@vgec "> Life@vgec </a></li>
+                    <li><a href="#Placements">Placements</a> </li>
+                    <li><a href="#People">People</a> <ul><li><a href="faculty.html">Faculty</a></li></ul></li> 
+                    <li><a href="#Others">Others</a> </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <div class="main">
+        <h1 class="admin-heading">Admissions</h1>
+        <div class="adm-container">
+            <div class="admin-para">
+                <p>The institute runs 9 Under Graduate (UG) engineering programs and 2 Post Graduate (PG) engineering
+                    programs. Out of 9 UG programs, four programs are accredited by the NBA
+                </p>
+            </div>
+            <h3 class="admin-heading3">Under Graduate Programs</h3>
+            <div class="admin-para">
+                <p>Admission process to all UG programs is carried out by the state level Admission Committee for
+                    Professional Courses (ACPC). For more details, visit ACPC website <a
+                        href="www.jacpcldce.ac.in/be.asp">www.jacpcldce.ac.in/be.asp</a>
+
+                </p><br>
+                <p>Fees: Tuition Fee for Boys: Rs. 1500/-
+                </p><br>
+                <p>
+                    Fees: Tuition Fee for Girls: NIL
+                </p><br>
+            </div>
+            <div class="table-content">
+                <table class="admin-table" border="1" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Branch</th>
+                            <th>Course</th>
+                            <th>Intake</th>
+                            <th>Accreditation Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Chemical Engineering</td>
+                            <td>UG</td>
+                            <td>60</td>
+                            <td>Accredited For 3 Years Upto 30/06/2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Computer Engineering</td>
+                            <td>UG</td>
+                            <td>120</td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Civil Engineering</td>
+                            <td>UG</td>
+                            <td>60</td>
+                            <td>Accredited For 3 Years Upto 30/06/2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>Electrical Engineering</td>
+                            <td>UG</td>
+                            <td>120</td>
+                            <td>Accredited For 3 Years Upto 30/06/2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td>Electronics & Communication Engineering</td>
+                            <td>UG</td>
+                            <td>120</td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td>Information Technology</td>
+                            <td>UG</td>
+                            <td>60</td>
+                            <td>Accredited For 3 Years Upto 30/06/2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td>Instrumentation & Control Engineering</td>
+                            <td>UG</td>
+                            <td>60</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <td>Mechanical Engineering</td>
+                            <td>UG</td>
+                            <td>60</td>
+                            <td>Accredited For 3 Years Upto 30/06/2022
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <td>Power Electronics Engineering</td>
+                            <td>UG</td>
+                            <td>60</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3 class="admin-heading3">Post Graduate Programs</h3>
+            <div class="admin-para">
+                <p>Admission process to all PG programs is carried out by the state level Admission Committee for
+                    Professional Courses (ACPC) based on valid GATE score/Post Graduate Common Entrance Test (PGCET).
+                    For more details, visit ACPC website <a href="www.jacpcldce.ac.in/me.asp
+                    ">www.jacpcldce.ac.in/me.asp
+                    </a></p>
+            </div>
+            <div class="table-content">
+                <table class="admin-table" border="1" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Branch</th>
+                            <th>Course</th>
+                            <th>Intake</th>
+                            <th>Accreditation Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Chemical Engineering</td>
+                            <td>PG</td>
+                            <td>18</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>1</th>
+                            <td>Electronics & Communications Engineering</td>
+                            <td>PG</td>
+                            <td>18</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- footer body  -->
+    <div class="footers">
+        <footer>
+            <div class="footer">
+                <div class="left">
+                    <div class="top">
+                        <div class="logo">
+                            <div class="image"> <img src="/WD/practical 1/Images/clogo.png" width="100px" alt="">
+                            </div>
+                            <div class="text">
+                                <h1>Vishwakarma Government Engineering College </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col1">
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/location.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>Nr. Visat three roads , Sabarmati- <br> Koba highway,chandkheda,
+                                        <br>Ahmedabad-382424
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/call.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>(079) 23293866</p>
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/letter.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>est@vgecg.ac.in <br>
+                                        sts@vgecg.ac.in (admission/ <br>academics queries</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <p>Campus Msp <br>
+                                Disclosures <br>
+                                Important links <br>
+                                Auditorium Booking</p>
+                        </div>
+                    </div>
+               
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

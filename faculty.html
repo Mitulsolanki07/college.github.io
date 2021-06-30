@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGEC | FACULTY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+        }
+    .Vgec-logo{
+    display: flex;
+}
+.Vgec-logo .clogo {
+    float: left;
+    margin: auto 25px;
+}
+.vgec-heading{
+    font-size: 0.8rem;
+    margin: auto;
+}
+.navbar{
+    /* position:fixed; */
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+nav{
+    /* position: fixed; */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2) ,0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: darkblue;
+    background: #fff;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 30px
+}
+.nav-left{
+    margin: auto;
+}
+.nav-right{
+    display: flex;
+    margin: auto;
+}
+.nav-right ul{
+    position: relative;
+   display: flex;
+}
+.nav-right ul li {
+    background: #fff;
+    padding: 10px; 
+    list-style: none;
+    font-size: 1.1rem;
+}
+.nav-right ul li a{
+    color: darkblue;
+    text-decoration: none;
+}
+.nav-right ul ul{
+    list-style: none;
+    position: absolute;
+    top: 90px;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.nav-right ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-right ul ul li{
+    position: relative;
+    top: -50px;
+    margin: 0;
+    width: 150px;
+    display: list-item;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+}
+.nav-right ul ul li a{
+    line-height: 40px;
+}
+/* end of navbar css  */
+        .faculty-container {
+            overflow: hidden;
+            width: 100%;
+            margin:  auto;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            display: flex;
+        }
+
+        .faculty-container .fac-dep {
+            flex-basis: 30%;
+            height: auto;
+            margin:20px;
+        }
+        .faculty-container .fac-dep .fac-table{
+            width: 80%;
+            margin: auto;
+        }
+        .faculty-container .fac-dep .fac-table .department {
+            line-height: 2;
+        }
+
+        .faculty-container .fac-dep .fac-table .department thead tr {
+            background: darkblue;
+        }
+
+        .faculty-container .fac-dep .fac-table .department thead tr th {
+            color: #fff;
+        }
+
+        .faculty-container .fac-dep .fac-table .department tbody tr {
+
+            background: #fff;
+        }
+
+        .fac-dep .fac-table .department tbody tr td {
+            color: darkblue;
+        }
+         .fac-dep .fac-table .department tbody tr td a{
+            text-decoration: none;
+            padding-left: 15px;
+            color: darkblue;
+            transition: all 0.2s ease;
+        }
+        .faculty-container .fac-dep .fac-table .department tbody tr td:hover{
+            background: rgb(40, 40, 158);
+        }
+        .faculty-container .fac-dep .fac-table .department tbody tr td a:hover{
+            background: rgb(40, 40, 158);
+            color: #fff;
+        }
+
+        .faculty-container .faculty-content {
+            flex-basis: 100%;
+            height: auto;
+            margin: 0 10px;
+        }
+        .faculty-content .faculty-heading{
+            color: darkblue;
+            font-size:2rem ;
+            font-weight: 400;
+            text-align: left;
+            padding-left: 40px;
+        }
+        .faculty-content .cards{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            width:100%;
+            justify-content: space-around;
+        }
+        .faculty-content .cards .card{
+            position: relative;
+            text-align: center;
+            box-shadow: 1px 1px 1px 1px black;
+            font-size: 1.1rem;
+            margin: 5px 40px;
+            line-height: 1.6rem;
+            height: 300px;
+        }
+        .faculty-content .cards .card img{
+            margin: 10px auto;
+            border: 1px solid blue;
+            width: 8rem;
+            border-radius: 60%;
+        }
+                /* footer css  */
+                .footer{
+    background: rgb(24, 24, 153);
+    color: #fff;
+    width: 100%;
+    
+}
+.top{
+    margin: 5px auto;
+    display: flex;
+}
+.left{
+    background: rgb(24, 24, 153);
+    width: 80%;
+    margin: 5px auto;
+}
+.logo{
+
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    width: min-content;
+margin: auto;
+}
+.row{
+    
+    text-align: center;
+    font-size: 20px;
+  
+    margin: 10px auto;
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+.col1{
+    flex-basis: 30%;
+
+}
+.col2{
+
+   flex-basis: 30%;
+    
+}
+.col3{
+
+    flex-basis: 30%;
+    margin: auto;   
+  
+}
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin:10px auto; */
+    /* background: deepskyblue; */
+    padding: 5px;
+}
+.tag .pic{
+    padding-right: 10px;
+}
+.tag .right-head{
+    padding: 10px;
+}
+.logo{
+    align-items: center;
+    display: flex;
+}
+.logo .image{
+    margin: auto 25px;
+}
+.text{
+    width: max-content;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="Vgec-logo">
+                    <div class="clogo"> <img src="/WD/practical 1/Images/clogo.png" width="60px" alt=""></div>
+                    <div class="vgec-heading">
+                        <h1>Vishwakarma Government Engineering College , <br> chandkheda Ahmedabad</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+
+
+                <ul>
+                    <li><a href="#About">About us</a> </li>
+                    <li><a href="#Academic">Academic</a> 
+                    <ul>
+                        <li><a href="Admission-page.html">Admissions</a></li>
+                        <li><a href="deparment.html">Department</a></li>
+                    </ul></li>
+                    <li> <a href="#Facilities"> Facilities </a>
+                    <ul><li><a href="library-page.html">Library</a></li></ul></li> 
+                    <li> <a href="#Life@vgec "> Life@vgec </a></li>
+                    <li><a href="#Placements">Placements</a> </li>
+                    <li><a href="#People">People</a> <ul><li><a href="faculty.html">Faculty</a></li></ul></li> 
+                    <li><a href="#Others">Others</a> </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="faculty-container">
+        <div class="fac-dep">
+            <div class="fac-table">
+                <table class="department" border="1" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#IT" id="#IT"> Information Technology</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#CE"> Computer Engineering</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"> Chemical Engineering</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"> Civil Engineering</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"> Electrical Engineering</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Mechanical Engineering</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Power ELectronics</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">ELectronics & Communications</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Instrumentation & Control</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Applied Mechanics</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Science And Humanity</a> </td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="faculty-content">
+            <h1 class="faculty-heading">FACULTIES</h1>
+            <div id="IT" class="cards">
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/vdp.png" alt=""></div>
+                    <div class="card-title">Prof. Vibha D. Patel</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">vibhadp@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/cp.png" alt=""></div>
+                    <div class="card-title">Prof. Chirag A. Patel</div>
+                    <div class="card-text">Associate Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">captel@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/sjm.png" alt=""></div>
+                    <div class="card-title">Prof. Shailesh J Molia</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">sjmolia@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/djv.png" alt=""></div>
+                    <div class="card-title">Prof. Dhaval J. Varia </div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">d.varia@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/ncg.png" alt=""></div>
+                    <div class="card-title">Prof. Nikunj C. Gamit</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">nikunj.gamit@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/pjd.jpg" alt=""></div>
+                    <div class="card-title">Prof. Jasvant Dave</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">jrd_it@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/jhv.png" alt=""></div>
+                    <div class="card-title">Prof. Jignesh H. Vania</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">jignesh.vania@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/nst.png" alt=""></div>
+                    <div class="card-title">Prof. Naimisha S. Trivedi</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">naimishi.trivedi@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/cgc.png" alt=""></div>
+                    <div class="card-title">Prof. Chetna G. Chand</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">cgchand@vgecg.ac.in</div>
+                </div>
+                <div class="card">
+                    <div><img src="/WD/practical 1/Images/dcp.png" alt=""></div>
+                    <div class="card-title">Prof. Dipak C. Patel</div>
+                    <div class="card-text">Professor</div>
+                    <div class="card-text">P.h.D</div>
+                    <div class="card-text">dipak.patel@vgecg.ac.in</div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!-- footer body  -->
+    <div class="footers">
+        <footer>
+            <div class="footer">
+                <div class="left">
+                    <div class="top">
+                        <div class="logo">
+                            <div class="image"> <img src="/WD/practical 1/Images/clogo.png" width="100px" alt="">
+                            </div>
+                            <div class="text">
+                                <h1>Vishwakarma Government Engineering College </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col1">
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/location.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>Nr. Visat three roads , Sabarmati- <br> Koba highway,chandkheda,
+                                        <br>Ahmedabad-382424
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/call.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>(079) 23293866</p>
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/letter.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>est@vgecg.ac.in <br>
+                                        sts@vgecg.ac.in (admission/ <br>academics queries</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <p>Campus Msp <br>
+                                Disclosures <br>
+                                Important links <br>
+                                Auditorium Booking</p>
+                        </div>
+                    </div>
+               
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

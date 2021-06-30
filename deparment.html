@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGEC-DEPARTMENT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            width: 100%;
+            font-family: 'Lato', sans-serif;
+        }
+        .Vgec-logo{
+    display: flex;
+}
+.Vgec-logo .clogo {
+    float: left;
+    margin: auto 25px;
+}
+.vgec-heading{
+    font-size: 0.8rem;
+    margin: auto;
+}
+.navbar{
+    /* position:fixed; */
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+nav{
+    /* position: fixed; */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2) ,0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: darkblue;
+    background: #fff;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 30px
+}
+.nav-left{
+    margin: auto;
+}
+.nav-right{
+    display: flex;
+    margin: auto;
+}
+.nav-right ul{
+    position: relative;
+   display: flex;
+}
+.nav-right ul li {
+    background: #fff;
+    padding: 10px; 
+    list-style: none;
+    font-size: 1.1rem;
+}
+.nav-right ul li a{
+    color: darkblue;
+    text-decoration: none;
+}
+.nav-right ul ul{
+    list-style: none;
+    position: absolute;
+    top: 90px;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.nav-right ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-right ul ul li{
+    position: relative;
+    top: -50px;
+    margin: 0;
+    width: 150px;
+    display: list-item;
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+}
+.nav-right ul ul li a{
+    line-height: 40px;
+}
+/* end of navbar css  */
+
+        .department-container {
+            overflow: hidden;
+            width: 99%;
+            margin: auto;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            display: flex;
+        }
+
+        .department-container .depart {
+            flex-basis: 30%;
+            height: auto;
+            margin: 20px;
+        }
+
+        .department-container .depart .dep-table {
+            width: 80%;
+        }
+
+        .department-container .depart .dep-table .department {
+            line-height: 2;
+            /* position: fixed; */
+            width: 400px;
+        }
+
+        .department-container .depart .dep-table .department thead tr {
+            background: darkblue;
+        }
+
+        .department-container .depart .dep-table .department thead tr th {
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .department-container .depart.dep-table .department tbody tr {
+
+            background: #fff;
+        }
+
+        .depart .dep-table .department tbody tr td {
+            color: darkblue;
+        }
+
+        .depart .dep-table .department tbody tr td a {
+            text-decoration: none;
+            padding-left: 15px;
+            color: darkblue;
+            transition: all 0.2s ease;
+        }
+
+        .department-container .depart .dep-table .department tbody tr td:hover {
+            background: rgb(40, 40, 158);
+        }
+
+        .department-container .depart .dep-table .department tbody tr td a:hover {
+            background: rgb(40, 40, 158);
+            color: #fff;
+        }
+
+        .department-container .department-content {
+            flex-basis: 100%;
+            height: auto;
+            margin: 20px 10px;
+        }
+
+        .department-content .department-heading {
+            color: darkblue;
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        .dep-grid {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+        }
+
+        .dep-grid-1 {
+            border: 1px solid black;
+            text-align: justify;
+            grid-column-start: 1;
+            padding: 10px;
+            grid-column-end: 3;      
+        }
+        .dep-grid h3{
+            font-weight: 400;
+            color: darkblue;
+        }
+        .dep-grid-1 table tbody tr {
+            line-height: 2;
+        }
+
+        .dep-grid-2 {text-align: justify;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .dep-grid-3 {
+            text-align: justify;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .dep-grid-4 {text-align: justify;
+            grid-column-start: 1;
+            padding: 10px;
+            grid-column-end: 3;
+            border: 1px solid black;
+        }
+
+        .dep-grid-5 {
+            text-align: justify;
+            grid-column-start: 1;
+            padding: 10px;
+            grid-column-end: 3;
+            border: 1px solid black;
+        }
+                        /* footer css  */
+                        .footer{
+    background: rgb(24, 24, 153);
+    color: #fff;
+    width: 100%;
+    
+}
+.top{
+    margin: 5px auto;
+    display: flex;
+}
+.left{
+    background: rgb(24, 24, 153);
+    width: 80%;
+    margin: 5px auto;
+}
+.logo{
+
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    width: min-content;
+margin: auto;
+}
+.row{
+    
+    text-align: center;
+    font-size: 20px;
+  
+    margin: 10px auto;
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+.col1{
+    flex-basis: 30%;
+
+}
+.col2{
+
+   flex-basis: 30%;
+    
+}
+.col3{
+
+    flex-basis: 30%;
+    margin: auto;   
+  
+}
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin:10px auto; */
+    /* background: deepskyblue; */
+    padding: 5px;
+}
+.tag .pic{
+    padding-right: 10px;
+}
+.tag .right-head{
+    padding: 10px;
+}
+.logo{
+    align-items: center;
+    display: flex;
+}
+.logo .image{
+    margin-top: 25px;
+    margin-right: 25px;
+    float: left;
+}
+.text{
+    width: max-content;
+    margin-top: 30px;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-left">
+                <div class="Vgec-logo">
+                    <div class="clogo"> <img src="/WD/practical 1/Images/clogo.png" width="60px" alt=""></div>
+                    <div class="vgec-heading">
+                        <h1>Vishwakarma Government Engineering College , <br> chandkheda Ahmedabad</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+
+
+                <ul>
+                    <li><a href="#About">About us</a> </li>
+                    <li><a href="#Academic">Academic</a> 
+                    <ul>
+                        <li><a href="Admission-page.html">Admissions</a></li>
+                        <li><a href="deparment.html">Department</a></li>
+                    </ul></li>
+                    <li> <a href="#Facilities"> Facilities </a>
+                    <ul><li><a href="library-page.html">Library</a></li></ul></li> 
+                    <li> <a href="#Life@vgec "> Life@vgec </a></li>
+                    <li><a href="#Placements">Placements</a> </li>
+                    <li><a href="#People">People</a> <ul><li><a href="faculty.html">Faculty</a></li></ul></li> 
+                    <li><a href="#Others">Others</a> </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="department-container">
+        <div class="depart">
+            <div class="dep-table">
+                <table class="department" border="1" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>INFORMATION TECHNOLOGY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#IT" id="#IT"> Department details</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#CE"> Faculties</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"> Laboratories</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"> Course Website</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"> Syllabus</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Events</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Newsletter</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Industry Advisors Board</a> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="department-content">
+            <h1 class="department-heading">INFORMATION TECHNOLOGY DEPARTMENT</h1>
+            <div class="dep-grid">
+                <div class="dep-grid-1">
+                    <table border="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>Programme</td>
+                                <td>Information Technology</td>
+                            </tr>
+                            <tr>
+                                <td>Department Co-ordinators</td>
+                                <td>Prof. V D Patel</td>
+                            </tr>
+                            <tr>
+                                <td>Year Of Starting</td>
+                                <td>1999 </td>
+                            </tr>
+                            <tr>
+                                <td>Level</td>
+                                <td>UG </td>
+                            </tr>
+                            <tr>
+                                <td>First year approval of council</td>
+                                <td> 1999 742-1-5(GUJ)/EI/99</td>
+                            </tr>
+                            <tr>
+                                <td>Intake</td>
+                                <td>60 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="dep-grid-2">
+                    <h3>VISION</h3>
+                    <p>The department aims to nurture students to be IT professionals who are innovative and technically
+                        competent to meet the advancements in industrial and societal needs.
+                    </p>
+                </div>
+                <div class="dep-grid-3">
+                    <h3>MISSION</h3>
+                    <ul>
+                        <li>To produce technically competent and socially responsible graduates.</li>
+                        <li> To develop well-equipped laboratories to gain practical exposure in IT practices.</li>
+                        <li>To support research culture, consultancy work and enhancement of entrepreneurship skills.
+                        </li>
+                        <li>To enhance industry linkage for good placements and real-world exposure.</li>
+                        <li>To encourage, involve and support students for environmental and social wellbeing.</li>
+                    </ul>
+                </div>
+                <div class="dep-grid-4">
+                    <h3>Program Educational Objectives (PEOs)
+                    </h3>
+                    <ul>
+                        <li> The graduate will be a competent professional with high-level technical proficiency in the
+                            field of Information Technology to identify problems and develop innovative solutions to
+                            meet the industrial needs.</li>
+                        <li>The graduate will exhibit professionalism, teamwork, leadership skills, and lifelong
+                            learning.</li>
+                        <li>The graduates will ethically apply their computing knowledge and skills considering
+                            societal, economic, and environmental factors.</li>
+                        <li> The graduate will be intellectually competent to pursue higher education and conduct
+                            research-oriented activities.</li>
+                    </ul>
+                </div>
+                <div class="dep-grid-5">
+                    <h3>Program Specific Outcome (PSOs)
+                    </h3>
+                    <ul>
+                        <li> Apply the principles of theoretical foundations, data organization, data communication,
+                            security, and data analytical methods in the evolving technology.</li>
+                        <li>Demonstrate skills to design, develop and test software systems to provide solutions to
+                            real-world problems.</li>
+                        <li>Demonstrate proficiency in one of the emerging technology like Data Science, Machine
+                            Learning, and Web/Mobile Application Development.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- footer body  -->
+       <div class="footers">
+        <footer>
+            <div class="footer">
+                <div class="left">
+                    <div class="top">
+                        <div class="logo">
+                            <div class="image"> <img src="/WD/practical 1/Images/clogo.png" width="100px" alt="">
+                            </div>
+                            <div class="text">
+                                <h1>Vishwakarma Government Engineering College </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col1">
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/location.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>Nr. Visat three roads , Sabarmati- <br> Koba highway,chandkheda,
+                                        <br>Ahmedabad-382424
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/call.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>(079) 23293866</p>
+                                </div>
+                            </div>
+                            <div class="tag">
+                                <div class="pic"><img src="/WD/practical 1/Images/letter.png" width="30px" alt=""></div>
+                                <div class="right-head">
+                                    <p>est@vgecg.ac.in <br>
+                                        sts@vgecg.ac.in (admission/ <br>academics queries</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <p>Campus Msp <br>
+                                Disclosures <br>
+                                Important links <br>
+                                Auditorium Booking</p>
+                        </div>
+                    </div>
+               
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
